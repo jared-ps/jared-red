@@ -11,7 +11,8 @@ html {
     font-size: 3.75em;
     font-family: 'Roboto Slab', serif;
     background: #E32525;
-    padding: .075em .15em .2em .25em;
+    padding: 0 .30em .05em .45em;
+    margin: 0 auto;
 }
 
 
@@ -22,6 +23,13 @@ h1 {
     font-weight: 700;
     letter-spacing: .15em;
     padding: .6em 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.775em;
+    color: #E32525;
+    font-weight: bold;
 }
 
 p {
@@ -42,7 +50,8 @@ p {
 
 header {
     background: url("../img/background.png");
-    height: 35em;
+    background-position: bottom right;
+    height: 33em;
 }
 
 header p {
@@ -55,7 +64,7 @@ header p {
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
-    padding: 4em;
+    padding: 3.8em;
 }
 
 
@@ -72,8 +81,39 @@ header p {
     justify-content: center;
     flex-flow: row wrap;
     width: 70%;
+    min-width: 300px;
     padding: 1em 1.2em; 
     border: #000000 solid 2px;
     
 }
 
+.services {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-box {
+    max-width: 556px;
+}
+
+.services-headline {
+    text-align: center;
+    padding: 1em;
+}
+
+.services-images {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.services-content img {
+    padding: 1em;
+    margin: 0;
+    width: 99px;
+    height: 99px;
+}
