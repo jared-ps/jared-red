@@ -32,6 +32,13 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #E32525;
+    font-weight: bold;
+}
+
 p {
     font-family: Garamond;
     font-size: 1em;
@@ -41,16 +48,17 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     background: #DCF0FF;
-    font-size: 1.2em;
-    padding: .2em 1.7em;
+    font-size: 1em;
+    padding: .5em 1.9em;
     box-shadow: none;
     border: #000000 solid 1px;
-    letter-spacing: .05em; 
+    letter-spacing: .07em; 
 }
 
 header {
     background: url("../img/background.png");
     background-position: bottom right;
+    background-size: auto;
     height: 33em;
 }
 
@@ -76,12 +84,13 @@ header p {
 }
 
 .hero-box {
-    background-color: #FFFCEE;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     width: 70%;
     min-width: 300px;
+    max-width: 460px;
     padding: 1em 1.2em; 
     border: #000000 solid 2px;
     
@@ -92,6 +101,7 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FFFCEE;
 }
 
 
@@ -117,3 +127,158 @@ header p {
     width: 99px;
     height: 99px;
 }
+
+.services-content-box {
+    padding: 1em;
+    text-align: center
+}
+
+.action-banner {
+    background: #FFE74C;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-content {
+    display: flex;
+    align-content: center;
+    justify-content: center;    
+}
+
+.action-image {
+    display: none;
+}
+
+.action-content {
+    text-align: center;
+}
+
+footer {
+    background: #000000;
+}
+
+.footer-container {
+    padding: 1em;
+    max-width: 16em;
+}
+
+footer p {
+    color: #FFFCEE;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    font-weight: normal;
+}
+
+footer a, a:visited {
+    color: #FFE74C;
+    padding: 0 .7em 0 0;
+    
+}
+
+footer a:hover, a:active {
+    color: #FFFCEE;
+}
+
+.contact-box img {
+    width: 27px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    
+    h1 {
+        font-size: 2.5em;
+    }
+   
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+    
+      
+    header {
+    height: 37em;
+    background-size: cover;
+    background-position: left;
+}
+    
+    
+    .logo {
+        color: #FFFFFF;
+        font-size: 3.75em;
+        font-family: 'Roboto Slab', serif;
+        background: #E32525;
+        padding: 0 .20em .2em .35em;
+        margin: 0 auto;
+    }
+
+    
+    .header-top-container {
+    display: block;
+    padding: 1em 0 6em 2.7em;
+    
+}
+    
+    header p {
+    font-size: 1.4em;
+    
+}
+    
+    .action-container {
+        max-width: 800px;
+    }
+    
+    .action-content {
+        text-align: left;
+    }
+    
+    .action-image {
+    display: inherit;
+    width: 25%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+    .action-image img {
+        width: 147px;
+        height: 162px;
+    }
+    
+    .action-text {
+        width: 70%;
+        padding: 1em;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    
+    .services-box {
+        max-width: 1200px;
+    }
+    
+    .services-headline {
+        padding: 0;
+    }
+    
+    .services-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    .services-content-box {
+       width: 30%;
+    }
